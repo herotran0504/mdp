@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MDP</string>
+    <string name="next">Next</string>
+    <string name="chemical_title">Enter a chemical name or guess:</string>
+    <string name="chemical_guess_subtitle">Type here</string>
+    <string name="chemical_add_subtitle">Type a new chemical name to add</string>
+    <string name="chemical_guess_btn">Guess</string>
+    <string name="chemical_add_btn">Add Chemical</string>
+</resources>
