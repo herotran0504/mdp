@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/amz_toolbar" />
+
+    <include layout="@layout/amz_content" />
+
+    <include layout="@layout/amz_show_password" />
+
+    <include layout="@layout/amz_keep_signin" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/primary_bg"
+        android:textAllCaps="false"
+        android:text="@string/amz_sign_in_btn"/>
+
+    <include layout="@layout/amz_new_account" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/secondary_bg"
+        android:textAllCaps="false"
+        android:text="@string/amz_create_new_amazon_account"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#E5E5E5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/amz_conditions_of_use_privacy_notice"
+        android:textColor="#7296c9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/amz_copyright" />
+</LinearLayout>

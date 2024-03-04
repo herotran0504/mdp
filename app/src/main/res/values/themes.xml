@@ -2,8 +2,8 @@
 
     <style name="Theme.MDP" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#6C4DAA</item>
-        <item name="colorPrimaryVariant">#6C4DAA</item>
+        <item name="colorPrimary">#EFD48F</item>
+        <item name="colorPrimaryVariant">#EFD48F</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -18,4 +18,5 @@
         <item name="colorControlActivated">#948C9E</item>
         <item name="colorControlHighlight">#948C9E</item>
     </style>
+
 </resources>
