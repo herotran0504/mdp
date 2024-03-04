@@ -6,4 +6,17 @@
     <string name="chemical_add_subtitle">Type a new chemical name to add</string>
     <string name="chemical_guess_btn">Guess</string>
     <string name="chemical_add_btn">Add Chemical</string>
+
+    <string name="res_add_btn">Add</string>
+    <string name="res_name_hint">water resource name</string>
+    <string name="res_location_hint">location</string>
+    <string name="res_type_hint">type</string>
+
+    <string name="res_name">Water resource name</string>
+    <string name="res_location">Location</string>
+    <string name="res_type">Type</string>
+
+    <string name="res_name_error">Water resource name is required</string>
+    <string name="res_location_error">Location is required</string>
+    <string name="res_type_error">Type is required</string>
 </resources>

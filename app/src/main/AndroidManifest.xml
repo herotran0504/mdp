@@ -15,6 +15,12 @@
             android:name=".assignment2.ChemicalActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
+            android:theme="@style/Theme.MDP" />
+
+        <activity
+            android:name=".assignment3.WaterResourceActivity"
+            android:exported="true"
+            android:screenOrientation="unspecified"
             android:theme="@style/Theme.MDP">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

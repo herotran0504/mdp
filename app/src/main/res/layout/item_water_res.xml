@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/res_cell_shape">
+
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="4dp"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toStartOf="@+id/res_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Water Resource Name" />
+
+    <TextView
+        android:id="@+id/res_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_cell_shape"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="4dp"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toStartOf="@+id/res_type"
+        app:layout_constraintStart_toEndOf="@+id/res_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        tools:text="Location" />
+
+    <TextView
+        android:id="@id/res_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:minHeight="48dp"
+        android:paddingHorizontal="4dp"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/res_location"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2"
+        tools:text="Type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
