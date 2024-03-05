@@ -10,4 +10,13 @@
     <string name="e_email_error">Email is required</string>
     <string name="e_password_error">Password is required</string>
     <string name="e_login_error">Please check your user id and password</string>
+    <string name="e_create_account">Create Account</string>
+    <string name="e_continue">Continue</string>
+    <string name="e_name_error">Name is required</string>
+    <string name="e_match_password_error">Password is not matched</string>
+    <string name="e_your_name">Your name</string>
+    <string name="e_mobile_number_or_email">Mobile number or email</string>
+    <string name="e_at_least_six_characters">At least six characters</string>
+    <string name="e_re_enter_password">Re enter password</string>
+    <string name="e_user_is_existed">User is existed</string>
 </resources>

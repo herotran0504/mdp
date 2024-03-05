@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:orientation="vertical"
-        android:background="@drawable/rounded_bg"
+        android:background="@drawable/squared_bg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in">
 
