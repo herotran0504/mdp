@@ -21,11 +21,10 @@
             android:name=".assignment3.WaterResourceActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
-            android:theme="@style/Theme.MDP">
-        </activity>
+            android:theme="@style/Theme.MDP" />
 
         <activity
-            android:name=".assignment3.AmazonLoginActivity"
+            android:name=".assignment4.SignInActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.MDP">

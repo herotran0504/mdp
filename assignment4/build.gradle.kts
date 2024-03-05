@@ -1,18 +1,14 @@
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
 android {
-    namespace = "miu.mdp"
+    namespace = "miu.mdp.assignment4"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "miu.mdp"
         minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
     }
 
     buildTypes {
@@ -36,7 +32,6 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(project(":uikit"))
-    implementation(project(":assignment4"))
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

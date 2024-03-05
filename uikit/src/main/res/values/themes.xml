@@ -2,8 +2,8 @@
 
     <style name="Theme.MDP" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#EFD48F</item>
-        <item name="colorPrimaryVariant">#EFD48F</item>
+        <item name="colorPrimary">#FFC10A</item>
+        <item name="colorPrimaryVariant">#FFC10A</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

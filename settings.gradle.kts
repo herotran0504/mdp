@@ -14,5 +14,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MDP"
+
 include(":app")
 include(":core")
+include(":assignment4")
+include(":uikit")

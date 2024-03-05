@@ -1,0 +1,13 @@
+<resources>
+    <string name="e_welcome">Welcome %s!</string>
+    <string name="e_shop_by_categories">Shop by categories</string>
+    <string name="e_sign_in">Sign In</string>
+    <string name="e_email">Email</string>
+    <string name="e_password">Password</string>
+    <string name="e_show_password">Show password</string>
+    <string name="e_new_to_amazon">New to Amazon?</string>
+    <string name="e_create_a_new_amazon_account">Create a new Amazon account</string>
+    <string name="e_email_error">Email is required</string>
+    <string name="e_password_error">Password is required</string>
+    <string name="e_login_error">Please check your user id and password</string>
+</resources>
