@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import miu.mdp.assignment4.data.User
 import miu.mdp.assignment4.data.UserRepository
 import miu.mdp.assignment4.databinding.ActivityCreateAccountBinding
-import miu.mdp.assignment4.nav.Navigator
 import miu.mdp.core.BindingActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
@@ -47,7 +46,7 @@ class CreateAccountActivity : BindingActivity<ActivityCreateAccountBinding>() {
         if (user == null) {
             displayError(getString(R.string.e_user_is_existed))
         } else {
-            Navigator.openShoppingCategoryScreen(this)
+            ShoppingCategoryActivity.start(activityContext = this)
         }
     }
 

@@ -17,5 +17,8 @@ rootProject.name = "MDP"
 
 include(":app")
 include(":core")
-include(":assignment4")
 include(":uikit")
+include(":assignment2")
+include(":assignment3")
+include(":assignment4")
+include(":assignment5")

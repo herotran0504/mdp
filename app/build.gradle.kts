@@ -36,7 +36,10 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(project(":uikit"))
+    implementation(project(":assignment2"))
+    implementation(project(":assignment3"))
     implementation(project(":assignment4"))
+    implementation(project(":assignment5"))
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

@@ -1,0 +1,27 @@
+<resources>
+    <string name="res_add_btn">Add</string>
+    <string name="res_name_hint">water resource name</string>
+    <string name="res_location_hint">location</string>
+    <string name="res_type_hint">type</string>
+
+    <string name="res_name">Water resource name</string>
+    <string name="res_location">Location</string>
+    <string name="res_type">Type</string>
+
+    <string name="res_name_error">Water resource name is required</string>
+    <string name="res_location_error">Location is required</string>
+    <string name="res_type_error">Type is required</string>
+    <string name="sign_in_to_zappos_com_using_your_amazon_account">Sign in to <b>Zappos.com</b> using your Amazon account</string>
+    <string name="amz_login_password">Amazon password</string>
+    <string name="amz_login_email">Email (phone or mobile accounts)</string>
+    <string name="amz_sign_in"><b>Sign in</b></string>
+    <string name="amz_show_password">Show Password</string>
+    <string name="amz_sign_in_btn">Sign in</string>
+    <string name="amz_create_new_amazon_account">Create new Amazon account</string>
+    <string name="amz_conditions_of_use_privacy_notice">Conditions of Use Privacy Notice</string>
+    <string name="amz_copyright">© 1996-2017, Amazon.com, Inc. or its affiliates</string>
+    <string name="amz_forgot_password_link">Forgot password?</string>
+    <string name="amz_keep_me_sign_in">Keep me sign in</string>
+    <string name="amz_details">Details</string>
+    <string name="amz_new_to_amazon">New to Amazon?</string>
+</resources>

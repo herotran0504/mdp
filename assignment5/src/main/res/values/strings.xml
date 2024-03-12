@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="s_food_preferences">Food Preferences</string>
+    <string name="s_dietary_habit_preferences">Dietary Habit Preferences</string>
+    <string name="s_start_survey">Start Survey</string>
+    <string name="s_survey">Survey</string>
+    <string name="s_submit">Submit</string>
+</resources>

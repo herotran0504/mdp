@@ -1,59 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/message"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/chemical_title"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/guess_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:autofillHints="name"
-        android:hint="@string/chemical_guess_subtitle"
-        android:inputType="text"
-        android:maxLines="1"
-        android:theme="@style/EditTextTheme" />
+        <Button
+            android:id="@+id/asm2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/guess_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/chemical_guess_btn" />
+        <Button
+            android:id="@+id/asm31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment3#1"
+            app:layout_constraintEnd_toStartOf="@+id/asm32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asm2"
+            app:layout_constraintWidth_percent="0.5" />
 
-    <EditText
-        android:id="@+id/add_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:autofillHints="name"
-        android:hint="@string/chemical_add_subtitle"
-        android:inputType="text"
-        android:maxLines="1"
-        android:theme="@style/EditTextTheme" />
+        <Button
+            android:id="@+id/asm32"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment3#2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/asm31"
+            app:layout_constraintTop_toBottomOf="@+id/asm2" />
 
-    <Button
-        android:id="@+id/add_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/chemical_add_btn" />
+        <Button
+            android:id="@+id/asm4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asm31" />
 
-    <ImageView
-        android:layout_width="240dp"
-        android:layout_height="240dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="32dp"
-        android:src="@drawable/chemical" />
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <Button
+            android:id="@+id/asm51"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment5#1"
+            app:layout_constraintEnd_toStartOf="@+id/asm32"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asm4"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <Button
+            android:id="@+id/asm52"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Assignment5#2"
+            android:minHeight="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/asm51"
+            app:layout_constraintTop_toBottomOf="@+id/asm4" />
+
+        <Button
+            android:id="@+id/asm6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:text="Assignment6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asm51" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

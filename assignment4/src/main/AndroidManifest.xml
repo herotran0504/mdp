@@ -7,13 +7,19 @@
             android:name=".ShoppingCategoryActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
-            android:theme="@style/Theme.MDP" />
+            android:theme="@style/Theme.MDP.4" />
 
         <activity
             android:name=".CreateAccountActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
-            android:theme="@style/Theme.MDP" />
+            android:theme="@style/Theme.MDP.4" />
 
+
+        <activity
+            android:name=".SignInActivity"
+            android:exported="true"
+            android:screenOrientation="unspecified"
+            android:theme="@style/Theme.MDP.4" />
     </application>
 </manifest>

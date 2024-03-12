@@ -8,7 +8,6 @@ import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
 import miu.mdp.assignment4.data.UserRepository
 import miu.mdp.assignment4.databinding.ActivitySigninBinding
-import miu.mdp.assignment4.nav.Navigator
 import miu.mdp.core.BindingActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
@@ -27,7 +26,9 @@ class SignInActivity : BindingActivity<ActivitySigninBinding>() {
     private fun initViews() {
         binding.showPassword.setOnCheckedChangeListener { _, isChecked -> handleShowPassword(isChecked) }
         binding.signInBtn.setOnClickListener { doLogin() }
-        binding.createAccountBtn.setOnClickListener { Navigator.openCreateAccountScreen(this) }
+        binding.createAccountBtn.setOnClickListener {
+            CreateAccountActivity.start(activityContext = this)
+        }
     }
 
     private fun handleShowPassword(show: Boolean) {
@@ -55,7 +56,7 @@ class SignInActivity : BindingActivity<ActivitySigninBinding>() {
         if (user == null) {
             displayError(getString(R.string.e_login_error))
         } else {
-            Navigator.openShoppingCategoryScreen(this)
+            ShoppingCategoryActivity.start(activityContext = this)
         }
     }
 

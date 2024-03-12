@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="Theme.MDP.3" parent="Theme.MDP">
+        <item name="colorPrimary">#715AAC</item>
+        <item name="colorPrimaryVariant">#715AAC</item>
+    </style>
+
+    <style name="Theme.MDP.32" parent="Theme.MDP">
+        <item name="colorPrimary">#EFD48F</item>
+        <item name="colorPrimaryVariant">#EFD48F</item>
+    </style>
+
+</resources>
