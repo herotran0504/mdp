@@ -6,11 +6,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import miu.mdp.assignment3.databinding.ActivityWaterBinding
 import miu.mdp.assignment3.databinding.ItemWaterResBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
 
-class WaterResourceActivity : BindingActivity<ActivityWaterBinding>() {
+class WaterResourceActivity : BaseActivity<ActivityWaterBinding>() {
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityWaterBinding.inflate(layoutInflater)
 

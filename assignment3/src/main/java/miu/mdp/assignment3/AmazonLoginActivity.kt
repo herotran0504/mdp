@@ -4,9 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import miu.mdp.assignment3.databinding.ActivityAmzLoginBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 
-class AmazonLoginActivity : BindingActivity<ActivityAmzLoginBinding>() {
+class AmazonLoginActivity : BaseActivity<ActivityAmzLoginBinding>() {
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityAmzLoginBinding.inflate(layoutInflater)
 

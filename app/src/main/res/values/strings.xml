@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MDP</string>
+    <string name="app_assignment2">Assignment2</string>
+    <string name="app_assignment3_1">Assignment3#1</string>
+    <string name="app_assignment3_2">Assignment3#2</string>
+    <string name="app_assignment4">Assignment4</string>
+    <string name="app_assignment5_1">Assignment5#1</string>
+    <string name="app_assignment5_2">Assignment5#2</string>
+    <string name="app_assignment6">Assignment6</string>
 </resources>

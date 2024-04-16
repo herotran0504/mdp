@@ -7,6 +7,7 @@ import miu.mdp.assignment3.WaterResourceActivity
 import miu.mdp.assignment4.SignInActivity
 import miu.mdp.assignment5.cart.ProductActivity
 import miu.mdp.assignment5.survey.MainActivity
+import miu.mdp.assignment6.sport.SportsActivity
 
 object Nav {
 
@@ -34,4 +35,7 @@ object Nav {
         ProductActivity.start(activityContext)
     }
 
+    fun openAssignment6(activityContext: Context) {
+        SportsActivity.start(activityContext)
+    }
 }

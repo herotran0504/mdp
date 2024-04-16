@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:gravity="center"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,19 +14,16 @@
 
         <Button
             android:id="@+id/asm2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment2"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/asm31"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment3#1"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment3_1"
             app:layout_constraintEnd_toStartOf="@+id/asm32"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/asm2"
@@ -34,29 +32,25 @@
         <Button
             android:id="@+id/asm32"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment3#2"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment3_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/asm31"
             app:layout_constraintTop_toBottomOf="@+id/asm2" />
 
         <Button
             android:id="@+id/asm4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment4"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/asm31" />
 
         <Button
             android:id="@+id/asm51"
+            style="@style/PrimaryButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment5#1"
+            android:text="@string/app_assignment5_1"
             app:layout_constraintEnd_toStartOf="@+id/asm32"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/asm4"
@@ -64,20 +58,18 @@
 
         <Button
             android:id="@+id/asm52"
+            style="@style/PrimaryButton"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Assignment5#2"
-            android:minHeight="56dp"
+            android:text="@string/app_assignment5_2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/asm51"
-            app:layout_constraintTop_toBottomOf="@+id/asm4" />
+            app:layout_constraintTop_toBottomOf="@+id/asm4"
+            app:layout_constraintWidth_percent="0.5" />
 
         <Button
             android:id="@+id/asm6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="56dp"
-            android:text="Assignment6"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/asm51" />

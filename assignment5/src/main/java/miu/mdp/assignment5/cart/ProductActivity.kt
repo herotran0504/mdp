@@ -12,10 +12,10 @@ import miu.mdp.assignment5.cart.data.Product
 import miu.mdp.assignment5.cart.data.ProductRepository
 import miu.mdp.assignment5.cart.data.ProductRepositoryImpl
 import miu.mdp.assignment5.databinding.ActivityProductBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
 
-class ProductActivity : BindingActivity<ActivityProductBinding>() {
+class ProductActivity : BaseActivity<ActivityProductBinding>() {
 
     private val productRepository: ProductRepository = ProductRepositoryImpl()
     private lateinit var productAdapter: ProductAdapter

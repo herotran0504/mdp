@@ -8,11 +8,11 @@ import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
 import miu.mdp.assignment4.data.UserRepository
 import miu.mdp.assignment4.databinding.ActivitySigninBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
 
-class SignInActivity : BindingActivity<ActivitySigninBinding>() {
+class SignInActivity : BaseActivity<ActivitySigninBinding>() {
 
     private val repo = UserRepository.get()
 

@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "miu.mdp"
-        minSdk = 21
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -40,6 +40,7 @@ dependencies {
     implementation(project(":assignment3"))
     implementation(project(":assignment4"))
     implementation(project(":assignment5"))
+    implementation(project(":assignment6"))
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

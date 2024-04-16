@@ -5,11 +5,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import miu.mdp.assignment2.databinding.ActivityChemicalBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.randElm
 
-class ChemicalActivity : BindingActivity<ActivityChemicalBinding>() {
+class ChemicalActivity : BaseActivity<ActivityChemicalBinding>() {
 
     private val chemicals = mutableListOf("Aluminum", "Gold", "Selenium")
 

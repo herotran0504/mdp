@@ -8,10 +8,10 @@ import miu.mdp.assignment4.data.Category
 import miu.mdp.assignment4.data.CategoryRepository
 import miu.mdp.assignment4.data.UserState
 import miu.mdp.assignment4.databinding.ActivityShoppingCategoryBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
 
-class ShoppingCategoryActivity : BindingActivity<ActivityShoppingCategoryBinding>() {
+class ShoppingCategoryActivity : BaseActivity<ActivityShoppingCategoryBinding>() {
 
     private val categoryRepository = CategoryRepository.get()
 

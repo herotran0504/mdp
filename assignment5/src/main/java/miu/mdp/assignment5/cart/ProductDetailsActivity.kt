@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import miu.mdp.assignment5.cart.data.Product
 import miu.mdp.assignment5.databinding.ActivityProductDetailsBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 
-class ProductDetailsActivity : BindingActivity<ActivityProductDetailsBinding>() {
+class ProductDetailsActivity : BaseActivity<ActivityProductDetailsBinding>() {
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityProductDetailsBinding.inflate(layoutInflater)
 

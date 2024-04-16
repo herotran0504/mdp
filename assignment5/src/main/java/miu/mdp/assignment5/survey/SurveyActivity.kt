@@ -7,10 +7,10 @@ import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import miu.mdp.assignment5.R
 import miu.mdp.assignment5.databinding.ActivitySurveyBinding
-import miu.mdp.core.BindingActivity
+import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
 
-class SurveyActivity : BindingActivity<ActivitySurveyBinding>() {
+class SurveyActivity : BaseActivity<ActivitySurveyBinding>() {
     private val selectedOptions = mutableMapOf<Int, Int>()
     private val repository = Repository()
 

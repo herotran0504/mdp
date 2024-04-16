@@ -1,0 +1,18 @@
+<resources>
+    <string name="s_news">News</string>
+    <string name="s_events">Events</string>
+    <string name="s_historical_archives">Historical Archives</string>
+    <string name="s_add_new_athlete">Add New Athlete</string>
+    <string name="s_athlete_name">Athlete\'s name</string>
+    <string name="s_main_competing_sport">Main Competing Sport</string>
+    <string name="s_country_of_origin">Country Of Origin</string>
+    <string name="s_personal_best">Personal Best</string>
+    <string name="s_number_of_medals_awarded">Number of Medals Awarded</string>
+    <string name="s_interesting_facts">Interesting facts</string>
+    <string name="s_cancel">Cancel</string>
+    <string name="s_add">Add</string>
+    <string name="s_add_new_events">Add New Events</string>
+    <string name="s_event_name">Event Name</string>
+    <string name="s_select_date">Select Date</string>
+    <string name="s_event_description">Event Description</string>
+</resources>
