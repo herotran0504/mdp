@@ -7,6 +7,7 @@ import android.widget.RadioButton
 import androidx.recyclerview.widget.RecyclerView
 import miu.mdp.assignment5.databinding.ItemAnswerBinding
 import miu.mdp.assignment5.databinding.ItemQuestionBinding
+import miu.mdp.assignment5.survey.model.Question
 
 class SurveyAdapter(
     private val questions: List<Question>,

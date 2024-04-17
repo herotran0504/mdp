@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment6.databinding.FragmentSportsBinding
 import miu.mdp.assignment6.sport.abs.AbsSportFragment
 import miu.mdp.assignment6.sport.data.SportsRepository
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class SportsFragment : AbsSportFragment<FragmentSportsBinding>() {
-    private val sportsRepository = SportsRepository()
+
+    @Inject
+    lateinit var sportsRepository: SportsRepository
 
     override fun initializeBinding(
         inflater: LayoutInflater,
@@ -39,4 +44,3 @@ class SportsFragment : AbsSportFragment<FragmentSportsBinding>() {
         }
     }
 }
-

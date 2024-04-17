@@ -6,15 +6,19 @@ import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment4.data.UserRepository
 import miu.mdp.assignment4.databinding.ActivitySigninBinding
 import miu.mdp.core.BaseActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class SignInActivity : BaseActivity<ActivitySigninBinding>() {
 
-    private val repo = UserRepository.get()
+    @Inject
+    lateinit var repo: UserRepository
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivitySigninBinding.inflate(layoutInflater)
 

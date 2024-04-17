@@ -1,12 +1,14 @@
 package miu.mdp.assignment5.cart.data
 
 import miu.mdp.assignment5.R
+import miu.mdp.assignment5.cart.model.Product
+import javax.inject.Inject
 
 interface ProductRepository {
     suspend fun getProducts(): List<Product>
 }
 
-class ProductRepositoryImpl : ProductRepository {
+internal class ProductRepositoryImpl @Inject constructor() : ProductRepository {
 
     override suspend fun getProducts() = listOf(
         Product(R.drawable.ic_ipad, R.drawable.ic_brand_apple, "iPad", "iPad Pro 11-inch", 400.0),

@@ -4,16 +4,20 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import miu.mdp.assignment4.data.Category
+import dagger.hilt.android.AndroidEntryPoint
+import miu.mdp.assignment4.model.Category
 import miu.mdp.assignment4.data.CategoryRepository
 import miu.mdp.assignment4.data.UserState
 import miu.mdp.assignment4.databinding.ActivityShoppingCategoryBinding
 import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class ShoppingCategoryActivity : BaseActivity<ActivityShoppingCategoryBinding>() {
 
-    private val categoryRepository = CategoryRepository.get()
+    @Inject
+    lateinit var categoryRepository: CategoryRepository
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityShoppingCategoryBinding.inflate(layoutInflater)
 
@@ -42,4 +46,3 @@ class ShoppingCategoryActivity : BaseActivity<ActivityShoppingCategoryBinding>()
     }
 
 }
-

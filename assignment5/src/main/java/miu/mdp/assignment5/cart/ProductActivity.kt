@@ -5,19 +5,23 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.launch
 import miu.mdp.assignment5.R
-import miu.mdp.assignment5.cart.data.Product
 import miu.mdp.assignment5.cart.data.ProductRepository
-import miu.mdp.assignment5.cart.data.ProductRepositoryImpl
+import miu.mdp.assignment5.cart.model.Product
 import miu.mdp.assignment5.databinding.ActivityProductBinding
 import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class ProductActivity : BaseActivity<ActivityProductBinding>() {
 
-    private val productRepository: ProductRepository = ProductRepositoryImpl()
+    @Inject
+    lateinit var productRepository: ProductRepository
+
     private lateinit var productAdapter: ProductAdapter
     private val cart: MutableList<Product> = mutableListOf()
 

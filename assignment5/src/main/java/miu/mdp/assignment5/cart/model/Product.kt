@@ -1,4 +1,4 @@
-package miu.mdp.assignment5.cart.data
+package miu.mdp.assignment5.cart.model
 
 data class Product(
     val productImage: Int,

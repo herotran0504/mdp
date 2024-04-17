@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment6.databinding.FragmentEventsBinding
 import miu.mdp.assignment6.sport.abs.AbsSportFragment
 import miu.mdp.assignment6.sport.data.EventsRepository
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class EventsFragment : AbsSportFragment<FragmentEventsBinding>() {
-    private val repository = EventsRepository()
+
+    @Inject
+    lateinit var repository: EventsRepository
 
     override fun initializeBinding(
         inflater: LayoutInflater,

@@ -1,8 +1,9 @@
 package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.Profile
+import javax.inject.Inject
 
-class ProfileRepository {
+class ProfileRepository @Inject constructor() {
     var data = Profile(
         name = "Hung Tran",
         avatar = "https://media.licdn.com/dms/image/C4E03AQEamG1WzKk_BA/profile-displayphoto-shrink_400_400/0/1517525074684?e=1718841600&v=beta&t=uBOkZ0MPb7pMqMQbRgZQANPGxieu6k9z4RtshInN_Gk",

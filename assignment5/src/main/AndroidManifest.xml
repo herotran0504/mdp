@@ -4,7 +4,7 @@
     <application>
 
         <activity
-            android:name=".survey.MainActivity"
+            android:name=".survey.SurveyStarterActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.MDP.5" />

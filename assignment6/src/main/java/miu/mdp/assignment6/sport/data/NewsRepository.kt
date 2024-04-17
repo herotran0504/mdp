@@ -1,8 +1,9 @@
 package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.News
+import javax.inject.Inject
 
-class NewsRepository : Repository<News>() {
+class NewsRepository @Inject constructor() : Repository<News>() {
     override var data = mutableListOf(
         News(
             "Xabi Alonso showered in beer after Bayer Leverkusen's historic victory at Bundesliga",

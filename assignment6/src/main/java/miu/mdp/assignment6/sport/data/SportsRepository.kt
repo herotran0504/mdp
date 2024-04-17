@@ -2,8 +2,9 @@ package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.Sport
 import miu.mdp.assignment6.sport.model.SportType
+import javax.inject.Inject
 
-class SportsRepository : Repository<Sport>() {
+class SportsRepository @Inject constructor() : Repository<Sport>() {
     override var data = mutableListOf(
         Sport(
             SportType.Measure,

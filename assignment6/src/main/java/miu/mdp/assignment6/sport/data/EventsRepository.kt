@@ -2,8 +2,9 @@ package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.Event
 import miu.mdp.core.parseToDate
+import javax.inject.Inject
 
-class EventsRepository : Repository<Event>() {
+class EventsRepository @Inject constructor() : Repository<Event>() {
     override var data = mutableListOf(
         Event(
             name = "2024 Summer Olympics",

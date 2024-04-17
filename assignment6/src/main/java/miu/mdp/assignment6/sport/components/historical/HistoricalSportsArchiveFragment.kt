@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment6.databinding.FragmentHistoricalSportsArchiveBinding
 import miu.mdp.assignment6.sport.abs.AbsSportFragment
 import miu.mdp.assignment6.sport.data.HistoricalRepository
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class HistoricalSportsArchiveFragment : AbsSportFragment<FragmentHistoricalSportsArchiveBinding>() {
-    private val repository = HistoricalRepository()
+
+    @Inject
+    lateinit var repository: HistoricalRepository
 
     override fun initializeBinding(
         inflater: LayoutInflater,

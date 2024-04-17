@@ -8,7 +8,7 @@ import miu.mdp.assignment5.databinding.ActivityStartBinding
 import miu.mdp.assignment5.nav.Navigator
 import miu.mdp.core.BaseActivity
 
-class MainActivity : BaseActivity<ActivityStartBinding>() {
+class SurveyStarterActivity : BaseActivity<ActivityStartBinding>() {
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityStartBinding.inflate(layoutInflater)
 
@@ -25,7 +25,7 @@ class MainActivity : BaseActivity<ActivityStartBinding>() {
 
     companion object {
         fun start(activityContext: Context) {
-            activityContext.startActivity(Intent(activityContext, MainActivity::class.java).apply {
+            activityContext.startActivity(Intent(activityContext, SurveyStarterActivity::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK
             })
         }

@@ -5,14 +5,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment5.R
 import miu.mdp.assignment5.databinding.ActivitySurveyBinding
+import miu.mdp.assignment5.survey.data.Repository
+import miu.mdp.assignment5.survey.model.Question
 import miu.mdp.core.BaseActivity
 import miu.mdp.core.showToast
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class SurveyActivity : BaseActivity<ActivitySurveyBinding>() {
+
+    @Inject
+    lateinit var repository: Repository
     private val selectedOptions = mutableMapOf<Int, Int>()
-    private val repository = Repository()
 
     private var isFoodSurvey: Boolean = true
     private val questions: List<Question> by lazy {

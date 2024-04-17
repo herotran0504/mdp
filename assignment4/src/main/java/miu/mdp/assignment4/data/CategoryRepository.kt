@@ -1,13 +1,16 @@
 package miu.mdp.assignment4.data
 
-import androidx.annotation.DrawableRes
 import miu.mdp.assignment4.R
+import miu.mdp.assignment4.model.Category
+import javax.inject.Inject
 
-data class Category(@DrawableRes val icon: Int, val name: String)
+interface CategoryRepository {
+    fun getCategories(): List<Category>
+}
 
-class CategoryRepository private constructor() {
+internal class CategoryRepositoryImpl @Inject constructor() : CategoryRepository {
 
-    fun getCategories() = CATEGORIES
+    override fun getCategories() = CATEGORIES
 
     companion object {
         private val CATEGORIES = listOf(
@@ -16,8 +19,6 @@ class CategoryRepository private constructor() {
             Category(R.drawable.ic_pet_food, "Pet supplies"),
             Category(R.drawable.ic_puzzle, "Toys and games"),
         )
-
-        fun get() = CategoryRepository()
     }
 
 }

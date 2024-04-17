@@ -2,8 +2,9 @@ package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.Historical
 import miu.mdp.core.parseToDate
+import javax.inject.Inject
 
-class HistoricalRepository : Repository<Historical>() {
+class HistoricalRepository @Inject constructor() : Repository<Historical>() {
 
     override var data = mutableListOf(
         Historical(

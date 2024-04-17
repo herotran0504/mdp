@@ -3,7 +3,7 @@ package miu.mdp.assignment4
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import miu.mdp.assignment4.data.Category
+import miu.mdp.assignment4.model.Category
 import miu.mdp.assignment4.databinding.ItemCategoryBinding
 
 class CategoryAdapter(

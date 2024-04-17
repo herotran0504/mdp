@@ -1,10 +1,16 @@
 package miu.mdp.assignment4.data
 
-data class User(val name: String, val id: String, val password: String)
+import miu.mdp.assignment4.model.User
+import javax.inject.Inject
 
-class UserRepository private constructor() {
+interface UserRepository {
+    fun createAccount(user: User): User?
+    fun validate(id: String, password: String): User?
+}
 
-    fun createAccount(user: User): User? {
+internal class UserRepositoryImpl @Inject constructor() : UserRepository {
+
+    override fun createAccount(user: User): User? {
         if (USERS.map { it.id }.contains(user.id)) {
             return null
         }
@@ -13,7 +19,7 @@ class UserRepository private constructor() {
         return user
     }
 
-    fun validate(
+    override fun validate(
         id: String, password: String
     ) = USERS.firstOrNull { it.id == id && it.password == password }.also {
         UserState.currentUser = it
@@ -23,8 +29,6 @@ class UserRepository private constructor() {
         private val USERS = mutableListOf(
             User("hung.tran", "hung.tran@miu.edu", "123456")
         )
-
-        fun get() = UserRepository()
     }
 }
 

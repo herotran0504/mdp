@@ -1,8 +1,9 @@
 package miu.mdp.assignment6.sport.data
 
 import miu.mdp.assignment6.sport.model.Athlete
+import javax.inject.Inject
 
-class AthletesRepository : Repository<Athlete>() {
+class AthletesRepository @Inject constructor() : Repository<Athlete>() {
 
     override var data = mutableListOf(
         Athlete(

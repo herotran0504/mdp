@@ -1,8 +1,17 @@
-package miu.mdp.assignment5.survey
+package miu.mdp.assignment5.survey.data
 
-class Repository {
+import miu.mdp.assignment5.survey.model.Option
+import miu.mdp.assignment5.survey.model.Question
+import javax.inject.Inject
 
-    fun getFoodQuestions() = listOf(
+interface Repository {
+    fun getFoodQuestions(): List<Question>
+    fun getDietaryQuestions(): List<Question>
+}
+
+internal class RepositoryImpl @Inject constructor() : Repository {
+
+    override fun getFoodQuestions() = listOf(
         Question(
             id = 2,
             text = "Are you a vegetarian?",
@@ -138,7 +147,7 @@ class Repository {
         )
     )
 
-    fun getDietaryQuestions() = listOf(
+    override fun getDietaryQuestions() = listOf(
         Question(
             id = 21,
             text = "Do you follow a specific dietary plan (e.g., Mediterranean, Atkins)?",

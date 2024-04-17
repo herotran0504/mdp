@@ -6,10 +6,13 @@ import miu.mdp.assignment3.AmazonLoginActivity
 import miu.mdp.assignment3.WaterResourceActivity
 import miu.mdp.assignment4.SignInActivity
 import miu.mdp.assignment5.cart.ProductActivity
-import miu.mdp.assignment5.survey.MainActivity
+import miu.mdp.assignment5.survey.SurveyStarterActivity
 import miu.mdp.assignment6.sport.SportsActivity
+import javax.inject.Inject
+import javax.inject.Singleton
 
-object Nav {
+@Singleton
+class Nav @Inject constructor() {
 
     fun openAssignment2(activityContext: Context) {
         ChemicalActivity.start(activityContext)
@@ -28,7 +31,7 @@ object Nav {
     }
 
     fun openAssignment51(activityContext: Context) {
-        MainActivity.start(activityContext)
+        SurveyStarterActivity.start(activityContext)
     }
 
     fun openAssignment52(activityContext: Context) {

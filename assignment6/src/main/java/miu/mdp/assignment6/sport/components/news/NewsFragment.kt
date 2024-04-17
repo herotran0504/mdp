@@ -5,12 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment6.databinding.FragmentNewsBinding
 import miu.mdp.assignment6.sport.abs.AbsSportFragment
 import miu.mdp.assignment6.sport.data.NewsRepository
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class NewsFragment : AbsSportFragment<FragmentNewsBinding>() {
-    private val repository = NewsRepository()
+
+    @Inject
+    lateinit var repository: NewsRepository
 
     override fun initializeBinding(
         inflater: LayoutInflater,
@@ -40,4 +45,3 @@ class NewsFragment : AbsSportFragment<FragmentNewsBinding>() {
         }
     }
 }
-

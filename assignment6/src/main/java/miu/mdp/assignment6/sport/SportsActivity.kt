@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.viewpager.widget.ViewPager.SimpleOnPageChangeListener
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 import miu.mdp.assignment6.R
 import miu.mdp.assignment6.databinding.ActivitySportsBinding
 import miu.mdp.core.BaseActivity
 
+@AndroidEntryPoint
 class SportsActivity : BaseActivity<ActivitySportsBinding>() {
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivitySportsBinding.inflate(layoutInflater)

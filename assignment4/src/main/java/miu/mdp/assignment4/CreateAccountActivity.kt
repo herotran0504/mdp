@@ -4,16 +4,20 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import miu.mdp.assignment4.data.User
+import dagger.hilt.android.AndroidEntryPoint
+import miu.mdp.assignment4.model.User
 import miu.mdp.assignment4.data.UserRepository
 import miu.mdp.assignment4.databinding.ActivityCreateAccountBinding
 import miu.mdp.core.BaseActivity
 import miu.mdp.core.hideKeyboard
 import miu.mdp.core.showToast
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class CreateAccountActivity : BaseActivity<ActivityCreateAccountBinding>() {
 
-    private val userRepository = UserRepository.get()
+    @Inject
+    lateinit var userRepository: UserRepository
 
     override fun initializeBinding(inflater: LayoutInflater) = ActivityCreateAccountBinding.inflate(layoutInflater)
 

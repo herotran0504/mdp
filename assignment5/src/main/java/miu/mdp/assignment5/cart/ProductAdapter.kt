@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import miu.mdp.assignment5.cart.data.Product
+import miu.mdp.assignment5.cart.model.Product
 import miu.mdp.assignment5.databinding.ItemProductBinding
 
 class ProductAdapter(
