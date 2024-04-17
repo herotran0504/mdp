@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:autofillHints="name"
-        android:hint="water resource name"
+        android:hint="@string/water_resource_name_hint"
         android:inputType="text"
         android:maxLines="1"
         android:theme="@style/EditTextTheme" />

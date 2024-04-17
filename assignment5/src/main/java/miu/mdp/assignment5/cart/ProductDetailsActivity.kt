@@ -27,7 +27,8 @@ internal class ProductDetailsActivity : BaseActivity<ActivityProductDetailsBindi
         binding.productImage.setImageResource(productImage)
         binding.productName.text = productName
         binding.productDescription.text = productDescription
-        binding.productCost.text = "$${productCost}"
+        val productCostTxt = "$${productCost}"
+        binding.productCost.text = productCostTxt
         binding.home.setOnClickListener { finish() }
     }
 

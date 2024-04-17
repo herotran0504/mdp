@@ -15,4 +15,15 @@
     <string name="s_event_name">Event Name</string>
     <string name="s_select_date">Select Date</string>
     <string name="s_event_description">Event Description</string>
+    <string name="s_sports_event_name_hint">Historical Sports Event Name</string>
+    <string name="s_date">Date</string>
+    <string name="s_description">Description</string>
+    <string name="s_add_new_news">Add New News</string>
+    <string name="s_news_image_url">News Image Url</string>
+    <string name="s_news_title">News Title</string>
+    <string name="s_news_description">News Description</string>
+    <string name="s_add_new_sports">Add New Sports</string>
+    <string name="s_sport_type">Sport Type</string>
+    <string name="s_sport_name">Sport Name</string>
+    <string name="s_sport_instruction">Sport Instruction</string>
 </resources>

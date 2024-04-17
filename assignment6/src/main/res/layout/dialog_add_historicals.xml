@@ -7,7 +7,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add New Events"
+        android:text="@string/s_add_new_events"
         android:textStyle="bold"
         android:textSize="18sp" />
 
@@ -20,7 +20,7 @@
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Historical Sports Event Name" />
+            android:hint="@string/s_sports_event_name_hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -32,7 +32,7 @@
             android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Date" />
+            android:hint="@string/s_date" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="4"
-            android:hint="Description" />
+            android:hint="@string/s_description" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -60,13 +60,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Cancel" />
+            android:text="@string/s_cancel" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            android:text="Add" />
+            android:text="@string/s_add" />
     </LinearLayout>
 </LinearLayout>

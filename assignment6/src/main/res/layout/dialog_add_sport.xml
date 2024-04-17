@@ -7,7 +7,7 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add New Sports"
+        android:text="@string/s_add_new_sports"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:hint="Sport Type"
+        android:hint="@string/s_sport_type"
         android:minHeight="48dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -28,7 +28,7 @@
             android:id="@+id/sportNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Sport Name" />
+            android:hint="@string/s_sport_name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="4"
-            android:hint="Sport Instruction" />
+            android:hint="@string/s_sport_instruction" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
@@ -58,7 +58,7 @@
             android:padding="12dp"
             android:background="@null"
             android:textAllCaps="false"
-            android:text="Cancel" />
+            android:text="@string/s_cancel" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addBtn"
@@ -67,6 +67,6 @@
             android:padding="12dp"
             android:background="@android:color/transparent"
             android:textAllCaps="false"
-            android:text="Add" />
+            android:text="@string/s_add" />
     </LinearLayout>
 </LinearLayout>

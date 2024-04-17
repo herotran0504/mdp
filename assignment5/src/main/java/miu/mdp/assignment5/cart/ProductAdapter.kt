@@ -29,12 +29,14 @@ class ProductAdapter(
         private val binding: ItemProductBinding,
         private val onAddToCartClick: (Product) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
+
         fun bind(product: Product) {
             binding.productImage.setImageResource(product.productImage)
             binding.productLogo.setImageResource(product.productLogo)
             binding.productName.text = product.productName
             binding.productDescription.text = product.productDescription
-            binding.productCost.text = "$${product.productCost}"
+            val productCostTxt = "$${product.productCost}"
+            binding.productCost.text = productCostTxt
             binding.addToCart.setOnClickListener { onAddToCartClick(product) }
         }
     }
