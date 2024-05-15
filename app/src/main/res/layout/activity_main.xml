@@ -73,6 +73,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/asm51" />
+
+        <Button
+            android:id="@+id/asm7"
+            style="@style/PrimaryButton"
+            android:text="@string/app_assignment7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/asm6" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

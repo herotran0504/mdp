@@ -1,0 +1,14 @@
+<resources>
+    <string name="k_animal_details">Animal Details</string>
+    <string name="k_species_details">Species Details</string>
+    <string name="k_title_home">Home</string>
+    <string name="k_cancel">Cancel</string>
+    <string name="k_save">Save</string>
+    <string name="k_species_description">Species description</string>
+    <string name="k_species_name">Species name</string>
+    <string name="k_add_species">Add species</string>
+    <string name="k_habitat">Habitat</string>
+    <string name="k_diet">Diet</string>
+    <string name="k_add_animal">Add animal</string>
+    <string name="k_animal_name">Animal name</string>
+</resources>

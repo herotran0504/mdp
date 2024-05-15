@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="miu.mdp.assignment7.animal.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_animalFragment"
+            app:destination="@id/animalFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_speciesFragment"
+            app:destination="@id/speciesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/animalFragment"
+        android:name="miu.mdp.assignment7.animal.ui.animaldetails.AnimalDetailsFragment"
+        android:label="AnimalFragment"
+        tools:layout="@layout/fragment_animal" />
+
+    <fragment
+        android:id="@+id/speciesFragment"
+        android:name="miu.mdp.assignment7.animal.ui.speciesdetails.SpeciesDetailsFragment"
+        android:label="SpeciesFragment"
+        tools:layout="@layout/fragment_species" />
+</navigation>

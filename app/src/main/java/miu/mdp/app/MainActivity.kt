@@ -31,6 +31,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         binding.asm51.setOnClickListener { nav.openAssignment51(this) }
         binding.asm52.setOnClickListener { nav.openAssignment52(this) }
         binding.asm6.setOnClickListener { nav.openAssignment6(this) }
+        binding.asm7.setOnClickListener { nav.openAssignment7(this) }
     }
 
 }

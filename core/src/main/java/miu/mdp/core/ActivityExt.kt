@@ -7,6 +7,7 @@ import android.view.View
 import android.view.WindowManager.LayoutParams
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.DateValidatorPointBackward
@@ -32,6 +33,10 @@ fun Activity.hideKeyboard() {
 
 fun Context.showToast(message: String, duration: Int = Toast.LENGTH_SHORT) {
     Toast.makeText(this, message, duration).show()
+}
+
+fun Fragment.showToast(message: String, duration: Int = Toast.LENGTH_SHORT) {
+    context?.let { Toast.makeText(it, message, duration).show() }
 }
 
 fun showForwardDatePicker(fragmentManager: FragmentManager, callback: (Long) -> Unit) {
