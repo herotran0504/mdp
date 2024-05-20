@@ -1,6 +1,7 @@
 package miu.mdp.app.nav
 
 import android.content.Context
+import miu.mdp.extra.ui.ProgramActivity
 import miu.mdp.assignment2.ChemicalActivity
 import miu.mdp.assignment3.AmazonLoginActivity
 import miu.mdp.assignment3.WaterResourceActivity
@@ -45,5 +46,9 @@ class Nav @Inject constructor() {
 
     fun openAssignment7(activityContext: Context) {
         AnimalKingdomActivity.start(activityContext)
+    }
+
+    fun openExtra(activityContext: Context) {
+        ProgramActivity.start(activityContext)
     }
 }

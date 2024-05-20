@@ -69,7 +69,4 @@ The project follows a standard MVVM (Model-View-ViewModel) architecture with a m
     - **res**: Contains resources such as layouts, drawables, strings, and other assets.
 
 ## Screenshots
-
-Include screenshots of the application UI to give users a visual representation of the features and functionality.
-
 ![Screenshot 1](../screenshots/assignment7/assignment7.png)

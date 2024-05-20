@@ -44,6 +44,7 @@ dependencies {
     implementation(project(":assignment5"))
     implementation(project(":assignment6"))
     implementation(project(":assignment7"))
+    implementation(project(":extra"))
 
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-compiler:2.51.1")
