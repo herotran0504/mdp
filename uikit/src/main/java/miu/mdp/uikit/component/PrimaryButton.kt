@@ -1,4 +1,4 @@
-package miu.mdp.app.ui
+package miu.mdp.uikit.component
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -41,6 +41,6 @@ fun PrimaryButton(
 
 @Preview
 @Composable
-fun PrimaryButtonPreview() {
-    PrimaryButton(text = "Me", onClick = {})
+internal fun PrimaryButtonPreview() {
+    PrimaryButton(text = "Click Me", onClick = {})
 }

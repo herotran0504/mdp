@@ -9,7 +9,7 @@ import miu.mdp.assignment4.SignInActivity
 import miu.mdp.assignment5.cart.ProductActivity
 import miu.mdp.assignment5.survey.SurveyStarterActivity
 import miu.mdp.assignment6.sport.SportsActivity
-import miu.mdp.assignment7.animal.AnimalKingdomActivity
+import miu.mdp.assignment7.animal.ui.AnimalKingdomActivity
 import javax.inject.Inject
 import javax.inject.Singleton
 
