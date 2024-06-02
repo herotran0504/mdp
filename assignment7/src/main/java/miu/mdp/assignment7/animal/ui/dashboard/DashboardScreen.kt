@@ -62,6 +62,6 @@ fun DashboardContent(animalDetails: () -> Unit = {}, speciesDetails: () -> Unit 
 
 @Preview(showBackground = true)
 @Composable
-internal fun DashboardContentPreview() {
+private fun DashboardContentPreview() {
     DashboardContent()
 }

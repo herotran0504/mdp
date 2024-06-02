@@ -18,7 +18,7 @@ import miu.mdp.uikit.component.PrimaryButton
 
 @Preview(showBackground = true)
 @Composable
-fun MainScreenPreview() {
+private fun MainScreenPreview() {
     MainScreen(Nav())
 }
 

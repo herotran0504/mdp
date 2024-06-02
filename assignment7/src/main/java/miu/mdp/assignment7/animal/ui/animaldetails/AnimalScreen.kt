@@ -138,7 +138,7 @@ fun AnimalItem(species: Animal) {
 
 @Preview(showBackground = true)
 @Composable
-fun AnimalContentPreview() {
+private fun AnimalContentPreview() {
     val animals = listOf(
         Animal(name = "Species", habitat = "habitat", diet = "diet"),
         Animal(name = "Species", habitat = "habitat", diet = "diet"),

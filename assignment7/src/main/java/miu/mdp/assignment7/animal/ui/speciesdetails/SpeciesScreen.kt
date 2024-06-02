@@ -137,7 +137,7 @@ fun SpeciesItem(species: Species) {
     device = "id:pixel_5"
 )
 @Composable
-fun SpeciesContentPreview() {
+private fun SpeciesContentPreview() {
     val species = listOf(
         Species(name = "Species", description = "Description"),
         Species(name = "Species", description = "Description")

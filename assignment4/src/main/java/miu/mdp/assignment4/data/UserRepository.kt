@@ -32,11 +32,3 @@ internal class UserRepositoryImpl @Inject constructor() : UserRepository {
     }
 }
 
-object UserState {
-    private var _currentUser: User? = null
-    var currentUser: User?
-        get() = _currentUser
-        set(value) {
-            _currentUser = value
-        }
-}

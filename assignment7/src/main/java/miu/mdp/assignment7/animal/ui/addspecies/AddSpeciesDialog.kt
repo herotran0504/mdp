@@ -95,6 +95,6 @@ fun AddSpeciesScreen(
 
 @Preview(showBackground = true)
 @Composable
-fun PreviewAddSpeciesScreen() {
+private fun PreviewAddSpeciesScreen() {
     AddSpeciesScreen(onSave = { _, _ -> })
 }

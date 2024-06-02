@@ -40,6 +40,6 @@ fun FabButton(
 
 @Preview
 @Composable
-fun FabButtonPreview() {
+private fun FabButtonPreview() {
     FabButton {}
 }

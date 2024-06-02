@@ -41,6 +41,6 @@ fun PrimaryButton(
 
 @Preview
 @Composable
-internal fun PrimaryButtonPreview() {
+private fun PrimaryButtonPreview() {
     PrimaryButton(text = "Click Me", onClick = {})
 }
