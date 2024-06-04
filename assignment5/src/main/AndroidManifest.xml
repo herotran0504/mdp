@@ -21,12 +21,6 @@
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.MDP.5" />
 
-        <activity
-            android:name=".cart.ProductDetailsActivity"
-            android:exported="true"
-            android:screenOrientation="unspecified"
-            android:theme="@style/Theme.MDP.5" />
-
     </application>
 
 </manifest>
