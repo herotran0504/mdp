@@ -5,9 +5,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -15,20 +17,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.PasswordVisualTransformation
-import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import miu.mdp.assignment4.R
 import miu.mdp.assignment4.widget.PrimaryButtonBackground
 import miu.mdp.assignment4.widget.SecondaryButtonBackground
-import miu.mdp.util.parseColor
+import miu.mdp.uikit.component.StyledBasicTextField
+import miu.mdp.uikit.component.StyledCheckBox
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignInScreen(
     onSignIn: (String, String) -> Unit,
@@ -74,80 +73,31 @@ fun SignInScreen(
                 ),
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            BasicTextField(
-                value = email,
-                onValueChange = { email = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(48.dp),
-                singleLine = true,
-                textStyle = TextStyle(fontSize = 16.sp),
-                keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Email),
-                decorationBox = { innerTextField ->
-                    Box(
-                        modifier = Modifier.fillMaxSize().padding(4.dp),
-                        contentAlignment = Alignment.CenterStart
-                    ) {
-                        if (email.isEmpty()) {
-                            Text(
-                                text = stringResource(id = R.string.e_email),
-                                color = Color.Gray,
-                                fontSize = 16.sp
-                            )
-                        }
-                        innerTextField()
-                    }
-                }
+            StyledBasicTextField(
+                initialText = email,
+                onTextChange = { email = it },
+                hintText = stringResource(id = R.string.e_email),
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email),
             )
 
             HorizontalDivider(color = Color(0xFFEBEAEB))
-
-            BasicTextField(
-                value = password,
-                onValueChange = { password = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(48.dp),
-                singleLine = true,
-                textStyle = TextStyle(fontSize = 16.sp),
-                keyboardOptions = KeyboardOptions.Default.copy(keyboardType = KeyboardType.Password),
-                visualTransformation = if (showPassword) VisualTransformation.None else PasswordVisualTransformation(),
-                decorationBox = { innerTextField ->
-                    Box(
-                        modifier = Modifier.fillMaxSize().padding(4.dp),
-                        contentAlignment = Alignment.CenterStart
-                    ) {
-                        if (password.isEmpty()) {
-                            Text(
-                                text = stringResource(id = R.string.e_password),
-                                color = Color.Gray,
-                                fontSize = 16.sp
-                            )
-                        }
-                        innerTextField()
-                    }
-                }
+            StyledBasicTextField(
+                initialText = password,
+                onTextChange = { password = it },
+                hintText = stringResource(id = R.string.e_password),
+                showPassword = showPassword,
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             )
         }
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start,
         ) {
-            CompositionLocalProvider(LocalMinimumInteractiveComponentEnforcement provides false) {
-                Checkbox(
-                    checked = showPassword,
-                    onCheckedChange = { showPassword = it },
-                    modifier = Modifier.align(Alignment.CenterVertically),
-                    colors = CheckboxDefaults.colors(
-                        checkedColor = Color.parseColor("#EFD48F"),
-                        uncheckedColor = Color.Gray,
-                        checkmarkColor = Color.White,
-                        disabledCheckedColor = Color.LightGray,
-                        disabledUncheckedColor = Color.DarkGray,
-                        disabledIndeterminateColor = Color.LightGray
-                    )
-                )
-            }
+            StyledCheckBox(
+                initValue = showPassword,
+                onCheckedChange = { showPassword = it },
+                modifier = Modifier.align(Alignment.CenterVertically)
+            )
             Text(
                 text = stringResource(id = R.string.e_show_password),
                 modifier = Modifier.padding(start = 6.dp)
