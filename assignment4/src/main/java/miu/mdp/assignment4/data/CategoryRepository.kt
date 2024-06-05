@@ -13,7 +13,7 @@ internal class CategoryRepositoryImpl @Inject constructor() : CategoryRepository
     override fun getCategories() = CATEGORIES
 
     companion object {
-        private val CATEGORIES = listOf(
+        internal val CATEGORIES = listOf(
             Category(R.drawable.ic_kitchen, "Home and Kitchen"),
             Category(R.drawable.ic_nail, "Beauty and personal care"),
             Category(R.drawable.ic_pet_food, "Pet supplies"),

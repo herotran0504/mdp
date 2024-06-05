@@ -2,13 +2,22 @@ package miu.mdp.assignment3
 
 import android.content.Context
 import android.content.Intent
-import android.view.LayoutInflater
-import miu.mdp.assignment3.databinding.ActivityAmzLoginBinding
-import miu.mdp.core.BaseActivity
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.material3.MaterialTheme
+import miu.mdp.assignment3.login.AmazonLoginScreen
 
-class AmazonLoginActivity : BaseActivity<ActivityAmzLoginBinding>() {
+class AmazonLoginActivity : ComponentActivity() {
 
-    override fun initializeBinding(inflater: LayoutInflater) = ActivityAmzLoginBinding.inflate(layoutInflater)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MaterialTheme {
+                AmazonLoginScreen()
+            }
+        }
+    }
 
     companion object {
         fun start(activityContext: Context) {

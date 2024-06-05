@@ -1,8 +1,8 @@
 <resources>
 
     <style name="Theme.MDP.4" parent="Theme.MDP">
-        <item name="colorPrimary">#715AAC</item>
-        <item name="colorPrimaryVariant">#715AAC</item>
+        <item name="colorPrimary">#EFD48F</item>
+        <item name="colorPrimaryVariant">#EFD48F</item>
     </style>
 
 </resources>

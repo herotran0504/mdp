@@ -3,7 +3,7 @@
 
     <application>
         <activity
-            android:name=".animal.AnimalKingdomActivity"
+            android:name=".animal.ui.AnimalKingdomActivity"
             android:exported="true"
             android:screenOrientation="unspecified"
             android:theme="@style/Theme.MDP.7" />

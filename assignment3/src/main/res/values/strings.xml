@@ -4,7 +4,7 @@
     <string name="res_location_hint">location</string>
     <string name="res_type_hint">type</string>
 
-    <string name="res_name">Water resource name</string>
+    <string name="res_name">Name</string>
     <string name="res_location">Location</string>
     <string name="res_type">Type</string>
 

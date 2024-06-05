@@ -101,6 +101,6 @@ private fun imageRequest(context: Context, program: Program) = ImageRequest.Buil
 
 @Preview(showBackground = true)
 @Composable
-fun ProgramCardPreview() {
+private fun ProgramCardPreview() {
     ProgramCard(PROGRAMS.last())
 }
