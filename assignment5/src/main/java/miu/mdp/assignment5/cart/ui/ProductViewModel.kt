@@ -3,10 +3,7 @@ package miu.mdp.assignment5.cart.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import miu.mdp.assignment5.cart.data.ProductRepository
 import miu.mdp.assignment5.cart.model.Product
@@ -20,9 +17,8 @@ class ProductViewModel @Inject constructor(
     private val _products = MutableStateFlow<List<Product>>(emptyList())
     val products: StateFlow<List<Product>> get() = _products
 
-
     private val _message = MutableSharedFlow<String>()
-    val message = _message.asSharedFlow()
+    val message: SharedFlow<String> get() = _message.asSharedFlow()
 
     private val cart = mutableListOf<Product>()
 
